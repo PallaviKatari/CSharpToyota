@@ -16,7 +16,7 @@ namespace CSharpPrograms
         public string Name { get; set; }
         public int Grade { get; set; }
     }
-
+    //Course Table - CourseId, CourseName, StudentId
     public class Course
     {
         public int CourseId { get; set; }

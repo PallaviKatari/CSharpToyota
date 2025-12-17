@@ -58,6 +58,7 @@ namespace CSharpPrograms
             List<int> list = new List<int>();
             list.Add(100);
             list.Add(200);
+            list.Add(300);
             //list.Add(10.89); //Error - cannot convert double to int
             foreach (var a in list)
             {
@@ -81,6 +82,7 @@ namespace CSharpPrograms
         }
         //stack - generic collection
         //Stack<T> - Push,Pop,Peek
+        //LIFO - Last In First Out
         public static void Stack()
         {
             Stack<int> stack = new Stack<int>();
@@ -99,6 +101,26 @@ namespace CSharpPrograms
                 Console.WriteLine(a);
             }
 
+        }
+        //Queue - generic collection
+        //FIFO - First In First Out
+        public static void Queue()
+        {
+            Queue<string> queue = new Queue<string>();
+            queue.Enqueue("First");
+            queue.Enqueue("Second");
+            queue.Enqueue("Third");
+            foreach (var a in queue)
+            {
+                Console.WriteLine(a);
+            }
+            Console.WriteLine(queue.Peek());//First
+            queue.Dequeue();//remove First
+            Console.WriteLine(queue.Peek());//Second
+            foreach (var a in queue)
+            {
+                Console.WriteLine(a);
+            }
         }
         //Dictionary - generic collection
         public static void Dictionary()

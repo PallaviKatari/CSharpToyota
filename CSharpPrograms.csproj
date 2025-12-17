@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpPrograms.LinqDemo</StartupObject>
+    <StartupObject>CSharpPrograms.Interfaces</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,14 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstraction.cs" />
     <Compile Include="Arrays.cs" />
     <Compile Include="Basics.cs" />
     <Compile Include="Collections.cs" />
     <Compile Include="Conditional.cs" />
+    <Compile Include="Encapsulation.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="Files.cs" />
-    <Compile Include="LinqDemo.cs" />
+    <Compile Include="Interfaces.cs" />
+    <Compile Include="Inheritance.cs" />
     <Compile Include="Nullables.cs" />
+    <Compile Include="Polymorphism.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleProgram.cs" />
